@@ -5,10 +5,10 @@ public class Contador {
         Scanner terminal = new Scanner(System.in);
 
         System.out.println("Digite o primeiro parâmetro");
-        int parametroUm = terminal.nextInt(); // Lê o primeiro número
+        int parametroUm = terminal.nextInt();
 
         System.out.println("Digite o segundo parâmetro");
-        int parametroDois = terminal.nextInt(); // Lê o segundo número
+        int parametroDois = terminal.nextInt(); 
 
         try {
             contar(parametroUm, parametroDois);
@@ -16,7 +16,7 @@ public class Contador {
             System.out.println("O segundo parâmetro deve ser maior que o primeiro");
         }
 
-        terminal.close(); // Boa prática: fechar o Scanner
+        terminal.close();
     }
 
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
